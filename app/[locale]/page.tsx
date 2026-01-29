@@ -1,5 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Hero } from '@/src/components/sections/Hero';
+import { AboutSection } from '@/src/components/sections/AboutSection';
 import { SportsGrid } from '@/src/components/sections/SportsGrid';
 import { TeamPreview } from '@/src/components/sections/TeamPreview';
 import { AchievementsSection } from '@/src/components/sections/AchievementsSection';
@@ -32,6 +33,9 @@ export default async function Home({ params }: HomeProps) {
         backgroundImage="/images/hero/hero-bg.webp"
         backgroundAlt="Paralympic athletes training at Sport Darom facilities in Beersheba"
       />
+
+      {/* About Section - Why Sport Darom? Value proposition for parents */}
+      <AboutSection showTitle />
 
       {/* Sports Grid - Showcase of all 8 Paralympic sports */}
       <SportsGrid showTitle />
