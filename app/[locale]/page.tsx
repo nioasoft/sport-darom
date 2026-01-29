@@ -1,33 +1,49 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
+import { Hero } from '@/src/components/sections/Hero';
+import { SportsGrid } from '@/src/components/sections/SportsGrid';
+import { TeamPreview } from '@/src/components/sections/TeamPreview';
+import { AchievementsSection } from '@/src/components/sections/AchievementsSection';
+import { ContactPreview } from '@/src/components/sections/ContactPreview';
 
 interface HomeProps {
   params: Promise<{ locale: string }>;
 }
 
+/**
+ * Homepage for Sport Darom
+ *
+ * A fully accessible, multi-language homepage showcasing:
+ * - Hero section with dynamic background and CTA
+ * - Sports grid with all 8 Paralympic sports
+ * - Team preview with featured coaches
+ * - Achievements showcase
+ * - Contact preview with quick-access contact info
+ */
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params;
 
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = await getTranslations();
-
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-[var(--background)]">
-      <main className="flex flex-col items-center gap-8 p-8 text-center">
-        <h1 className="text-5xl font-bold text-[var(--color-primary-900)]">
-          {t('hero.title')}
-        </h1>
-        <p className="max-w-2xl text-xl text-[var(--color-primary-700)]">
-          {t('hero.subtitle')}
-        </p>
-        <a
-          href="#contact"
-          className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-full bg-[var(--color-primary-700)] px-8 py-3 font-semibold text-white transition-colors hover:bg-[var(--color-primary-800)] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary-500)]"
-        >
-          {t('hero.cta')}
-        </a>
-      </main>
-    </div>
+    <>
+      {/* Hero Section - Inspiring entry with video/image background */}
+      <Hero
+        backgroundImage="/images/hero/hero-bg.webp"
+        backgroundAlt="Paralympic athletes training at Sport Darom facilities in Beersheba"
+      />
+
+      {/* Sports Grid - Showcase of all 8 Paralympic sports */}
+      <SportsGrid showTitle />
+
+      {/* Achievements Section - Highlight accomplishments */}
+      <AchievementsSection showTitle />
+
+      {/* Team Preview - Featured coaches and staff */}
+      <TeamPreview showTitle limit={4} />
+
+      {/* Contact Preview - Quick access to contact info */}
+      <ContactPreview showTitle />
+    </>
   );
 }
