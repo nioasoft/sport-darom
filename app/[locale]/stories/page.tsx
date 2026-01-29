@@ -300,7 +300,7 @@ export default async function StoriesPage({ params }: StoriesPageProps) {
           <div
             className={cn(
               'grid gap-8',
-              'grid-cols-1 lg:grid-cols-3'
+              'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
             )}
             role="list"
             aria-label={t('storiesTitle')}
@@ -319,6 +319,16 @@ export default async function StoriesPage({ params }: StoriesPageProps) {
             <StoryCard
               quote={t('story3Quote')}
               author={t('story3Author')}
+              accentColor="gold"
+            />
+            <StoryCard
+              quote={t('story4Quote')}
+              author={t('story4Author')}
+              accentColor="primary"
+            />
+            <StoryCard
+              quote={t('story5Quote')}
+              author={t('story5Author')}
               accentColor="gold"
             />
           </div>
