@@ -186,10 +186,18 @@ export function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const prefersReducedMotion = useReducedMotion();
 
-  // Track scroll position for header styling
+  // Track scroll position for header styling (throttled with RAF)
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 10);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -197,14 +205,19 @@ export function Header() {
   }, []);
 
   // Lock body scroll when mobile menu is open
+  // Using padding-right to prevent layout shift when scrollbar disappears
   useEffect(() => {
     if (isMobileMenuOpen) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
       document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
     }
     return () => {
       document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
     };
   }, [isMobileMenuOpen]);
 
