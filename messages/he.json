@@ -19,6 +19,11 @@
   "sports": {
     "title": "ענפי הספורט שלנו",
     "pageDescription": "גלו את 8 ענפי הספורט הפראלימפי שלנו - כל אחד מותאם לצרכים ולכישורים שונים",
+    "aboutSport": "אודות הענף",
+    "descriptionComingSoon": "תיאור הענף יתווסף בקרוב...",
+    "gallery": "גלריה",
+    "quickLinks": "קישורים מהירים",
+    "allSports": "כל ענפי הספורט",
     "athletics": {
       "name": "אתלטיקה",
       "description": ""

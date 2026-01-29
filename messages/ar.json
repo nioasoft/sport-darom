@@ -19,6 +19,11 @@
   "sports": {
     "title": "رياضاتنا",
     "pageDescription": "اكتشفوا رياضاتنا الثمانية البارالمبية - كل منها مصمم لاحتياجات ومهارات مختلفة",
+    "aboutSport": "عن الرياضة",
+    "descriptionComingSoon": "سيتم إضافة وصف الرياضة قريباً...",
+    "gallery": "معرض الصور",
+    "quickLinks": "روابط سريعة",
+    "allSports": "جميع الرياضات",
     "athletics": {
       "name": "ألعاب القوى",
       "description": ""
