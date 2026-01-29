@@ -70,7 +70,14 @@
   "contact": {
     "title": "اتصل بنا",
     "subtitle": "يسعدنا سماع أخباركم",
-    "cta": "لصفحة الاتصال"
+    "pageDescription": "لديكم أسئلة؟ ترغبون بالانضمام؟ يسعدنا المساعدة! املأوا النموذج أو تواصلوا معنا مباشرة",
+    "cta": "لصفحة الاتصال",
+    "directContact": "تواصلوا معنا مباشرة",
+    "directContactDescription": "تفضلون التحدث؟ نحن هنا من أجلكم",
+    "registrationTitle": "التسجيل للنشاط",
+    "registrationDescription": "للتسجيل والمزيد من المعلومات حول أنشطتنا",
+    "locationTitle": "موقعنا",
+    "locationDescription": "مركز النشاط يقع في منطقة بئر السبع"
   },
   "form": {
     "name": "الاسم الكامل",

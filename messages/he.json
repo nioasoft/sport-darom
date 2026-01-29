@@ -70,7 +70,14 @@
   "contact": {
     "title": "צרו קשר",
     "subtitle": "נשמח לשמוע מכם",
-    "cta": "לדף יצירת קשר"
+    "pageDescription": "יש לכם שאלות? מעוניינים להצטרף? נשמח לעזור! מלאו את הטופס או פנו אלינו ישירות",
+    "cta": "לדף יצירת קשר",
+    "directContact": "צרו קשר ישירות",
+    "directContactDescription": "מעדיפים לדבר? אנחנו כאן בשבילכם",
+    "registrationTitle": "הרשמה לפעילות",
+    "registrationDescription": "להרשמה ופרטים נוספים על הפעילויות שלנו",
+    "locationTitle": "המיקום שלנו",
+    "locationDescription": "מרכז הפעילות נמצא באזור באר שבע"
   },
   "form": {
     "name": "שם מלא",
