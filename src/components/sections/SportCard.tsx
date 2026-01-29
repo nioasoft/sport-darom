@@ -145,7 +145,8 @@ export function SportCard({ sport, index = 0, className }: SportCardProps) {
             // Base layout
             'relative overflow-hidden',
             'flex flex-col',
-            'min-h-[280px] sm:min-h-[320px]',
+            // Scale min-height with font size to prevent text overflow at larger scales
+            'min-h-[calc(280px*var(--font-scale))] sm:min-h-[calc(320px*var(--font-scale))]',
             // Background with diagonal cut
             'bg-gradient-to-br from-[var(--background)] via-[var(--background)] to-[var(--color-primary-50)]',
             // Border with sport accent

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/src/lib/utils';
+import { useReducedMotion } from '@/src/hooks/useReducedMotion';
 import { Navigation } from './Navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
@@ -98,11 +99,15 @@ function HamburgerButton({
   isOpen,
   onClick,
   className,
+  prefersReducedMotion = false,
 }: {
   isOpen: boolean;
   onClick: () => void;
   className?: string;
+  prefersReducedMotion?: boolean;
 }) {
+  const transitionDuration = prefersReducedMotion ? 0 : 0.2;
+
   return (
     <button
       type="button"
@@ -136,7 +141,7 @@ function HamburgerButton({
             rotate: isOpen ? 45 : 0,
             y: isOpen ? 0 : -6,
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: transitionDuration }}
           className={cn(
             'absolute w-6 h-0.5 rounded-full',
             'bg-current',
@@ -150,7 +155,7 @@ function HamburgerButton({
             opacity: isOpen ? 0 : 1,
             scaleX: isOpen ? 0 : 1,
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: transitionDuration }}
           className={cn(
             'absolute w-6 h-0.5 rounded-full',
             'bg-current'
@@ -163,7 +168,7 @@ function HamburgerButton({
             rotate: isOpen ? -45 : 0,
             y: isOpen ? 0 : 6,
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: transitionDuration }}
           className={cn(
             'absolute w-6 h-0.5 rounded-full',
             'bg-current',
@@ -179,6 +184,7 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
+  const prefersReducedMotion = useReducedMotion();
 
   // Track scroll position for header styling
   useEffect(() => {
@@ -267,6 +273,7 @@ export function Header() {
                 isOpen={isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="lg:hidden"
+                prefersReducedMotion={prefersReducedMotion}
               />
             </div>
           </div>
