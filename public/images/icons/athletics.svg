@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Athletics - אתלטיקה</title>
+  <!-- Running figure with wheelchair variant representation -->
+  <circle cx="32" cy="10" r="6" fill="currentColor"/>
+  <path d="M20 24l8 4l12-4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 28l-4 18l-6 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 28l8 16l10 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 14v14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <!-- Track lanes -->
+  <path d="M8 58h48" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>
