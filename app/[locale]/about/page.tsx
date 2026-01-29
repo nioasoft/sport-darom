@@ -262,7 +262,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             {partners.map(({ key, icon: Icon }) => (
               <article
                 key={key}
-                role="listitem"
+               
                 className={cn(
                   'relative p-6 rounded-[var(--radius-xl)]',
                   'bg-[var(--color-primary-50)]',
@@ -400,7 +400,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             {approachValues.map(({ key, icon: Icon }) => (
               <article
                 key={key}
-                role="listitem"
+               
                 className={cn(
                   'relative p-6 rounded-[var(--radius-xl)]',
                   'bg-[var(--background)]',
@@ -492,7 +492,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
               <Link
                 key={sport.slug}
                 href={`/sports/${sport.slug}`}
-                role="listitem"
+               
                 className={cn(
                   'flex flex-col items-center p-4',
                   'rounded-[var(--radius-lg)]',

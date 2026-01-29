@@ -215,7 +215,7 @@ export function AboutSection({ className, showTitle = true }: AboutSectionProps)
               <motion.article
                 key={key}
                 variants={cardVariants}
-                role="listitem"
+               
                 className="group"
               >
                 <motion.div

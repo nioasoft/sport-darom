@@ -517,7 +517,7 @@ function StoryCard({ quote, author, accentColor, featured }: StoryCardProps) {
 
   return (
     <article
-      role="listitem"
+     
       className={cn(
         'group relative',
         featured && 'lg:-mt-4 lg:mb-4'

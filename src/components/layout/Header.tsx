@@ -77,11 +77,15 @@ function Logo({ className }: { className?: string }) {
         )}>
           ספורט דרום
         </span>
-        <span className={cn(
-          'text-[var(--text-xs)] font-medium',
-          'text-[var(--color-accent-600)]',
-          'tracking-wide uppercase'
-        )}>
+        {/* Decorative English text - hidden from screen readers */}
+        <span
+          className={cn(
+            'text-[var(--text-xs)] font-medium',
+            'text-[var(--color-accent-600)]',
+            'tracking-wide uppercase'
+          )}
+          aria-hidden="true"
+        >
           Paralympic Sports
         </span>
       </div>

@@ -39,9 +39,11 @@ const navItems: NavItem[] = [
 function SportsDropdown({
   isOpen,
   onClose,
+  buttonRef,
 }: {
   isOpen: boolean;
   onClose: () => void;
+  buttonRef?: React.RefObject<HTMLButtonElement | null>;
 }) {
   const t = useTranslations();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -53,6 +55,42 @@ function SportsDropdown({
       firstLink?.focus();
     }
   }, [isOpen]);
+
+  // Handle keyboard navigation within dropdown
+  const handleKeyDown = useCallback((event: React.KeyboardEvent) => {
+    const links = dropdownRef.current?.querySelectorAll('a');
+    if (!links || links.length === 0) return;
+
+    const currentIndex = Array.from(links).findIndex(
+      (link) => link === document.activeElement
+    );
+
+    switch (event.key) {
+      case 'ArrowDown':
+        event.preventDefault();
+        const nextIndex = currentIndex < links.length - 1 ? currentIndex + 1 : 0;
+        (links[nextIndex] as HTMLElement).focus();
+        break;
+      case 'ArrowUp':
+        event.preventDefault();
+        const prevIndex = currentIndex > 0 ? currentIndex - 1 : links.length - 1;
+        (links[prevIndex] as HTMLElement).focus();
+        break;
+      case 'Home':
+        event.preventDefault();
+        (links[0] as HTMLElement).focus();
+        break;
+      case 'End':
+        event.preventDefault();
+        (links[links.length - 1] as HTMLElement).focus();
+        break;
+      case 'Escape':
+        event.preventDefault();
+        onClose();
+        buttonRef?.current?.focus();
+        break;
+    }
+  }, [onClose, buttonRef]);
 
   return (
     <AnimatePresence>
@@ -85,6 +123,7 @@ function SportsDropdown({
           )}
           role="menu"
           aria-label={t('navigation.sports')}
+          onKeyDown={handleKeyDown}
         >
           {/* Gold accent stripe */}
           <div
@@ -202,6 +241,7 @@ function NavItem({
 }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const itemRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const t = useTranslations('navigation');
   const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
@@ -338,6 +378,7 @@ function NavItem({
         onMouseLeave={handleMouseLeave}
       >
         <button
+          ref={buttonRef}
           type="button"
           aria-expanded={isDropdownOpen}
           aria-haspopup="true"
@@ -351,6 +392,7 @@ function NavItem({
         <SportsDropdown
           isOpen={isDropdownOpen}
           onClose={() => setIsDropdownOpen(false)}
+          buttonRef={buttonRef}
         />
       </div>
     );

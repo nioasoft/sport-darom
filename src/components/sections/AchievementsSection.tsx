@@ -485,7 +485,7 @@ function AchievementCard({
   return (
     <motion.article
       variants={variants}
-      role="listitem"
+     
       className={cn(
         'group',
         // Podium-style offset for visual interest

@@ -276,7 +276,7 @@ export function SportCard({ sport, index = 0, className }: SportCardProps) {
           <div className="flex-1 p-5 flex flex-col justify-between">
             {/* Sport name with accent underline */}
             <div>
-              <h3
+              <h2
                 className={cn(
                   'text-[var(--text-xl)] font-bold',
                   'text-[var(--foreground)]',
@@ -286,7 +286,7 @@ export function SportCard({ sport, index = 0, className }: SportCardProps) {
                 )}
               >
                 {sportName}
-              </h3>
+              </h2>
 
               {/* Decorative accent line under title */}
               <div

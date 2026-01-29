@@ -199,7 +199,7 @@ export default async function TeamPage({ params }: TeamPageProps) {
             aria-label={t('title')}
           >
             {sortedTeam.map((member, index) => (
-              <div key={member.id} role="listitem">
+              <div key={member.id}>
                 <TeamCard
                   member={member}
                   locale={locale as 'he' | 'ar' | 'ru'}
