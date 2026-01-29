@@ -80,9 +80,12 @@
     "submit": "שלח",
     "sending": "שולח...",
     "success": "ההודעה נשלחה בהצלחה!",
+    "successDescription": "נחזור אליכם בהקדם האפשרי",
     "error": "אירעה שגיאה, אנא נסו שוב",
     "required": "שדה חובה",
-    "invalidEmail": "כתובת דוא\"ל לא תקינה"
+    "invalidEmail": "כתובת דוא\"ל לא תקינה",
+    "tryAgain": "נסו שוב",
+    "formDescription": "טופס יצירת קשר. מלאו את הפרטים ונחזור אליכם בהקדם"
   },
   "accessibility": {
     "skipLinksLabel": "קישורי דילוג",
