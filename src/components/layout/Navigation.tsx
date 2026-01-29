@@ -28,6 +28,7 @@ interface NavItem {
 // Navigation items
 const navItems: NavItem[] = [
   { href: '/', labelKey: 'home' },
+  { href: '/about', labelKey: 'about' },
   { href: '/sports', labelKey: 'sports', hasDropdown: true },
   { href: '/team', labelKey: 'team' },
   { href: '/stories', labelKey: 'stories' },
