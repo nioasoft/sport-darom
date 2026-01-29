@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "Спорт Даром - Паралимпийский спорт на юге страны",
+    "description": "Присоединяйтесь к нам для паралимпийской спортивной деятельности в районе Беэр-Шевы - 8 видов спорта для людей с ограниченными возможностями"
+  },
+  "navigation": {
+    "home": "Главная",
+    "sports": "Виды спорта",
+    "team": "Наша команда",
+    "stories": "Истории успеха",
+    "contact": "Контакты",
+    "accessibility": "Доступность"
+  },
+  "hero": {
+    "title": "Спорт Даром",
+    "subtitle": "Паралимпийский спорт на юге страны",
+    "cta": "Присоединяйтесь к нам"
+  },
+  "sports": {
+    "title": "Наши виды спорта",
+    "athletics": {
+      "name": "Лёгкая атлетика",
+      "description": ""
+    },
+    "wheelchair-basketball": {
+      "name": "Баскетбол на колясках",
+      "description": ""
+    },
+    "goalball": {
+      "name": "Голбол",
+      "description": ""
+    },
+    "swimming": {
+      "name": "Плавание",
+      "description": ""
+    },
+    "bocce": {
+      "name": "Бочче",
+      "description": ""
+    },
+    "hand-cycling": {
+      "name": "Ручной велосипед",
+      "description": ""
+    },
+    "judo": {
+      "name": "Дзюдо",
+      "description": ""
+    },
+    "archery": {
+      "name": "Стрельба из лука",
+      "description": ""
+    }
+  },
+  "team": {
+    "title": "Наша команда",
+    "projectManager": "Руководитель проекта",
+    "headCoach": "Главный тренер",
+    "coach": "Тренер"
+  },
+  "contact": {
+    "title": "Свяжитесь с нами",
+    "subtitle": "Мы будем рады услышать вас"
+  },
+  "form": {
+    "name": "Полное имя",
+    "email": "Электронная почта",
+    "phone": "Телефон",
+    "message": "Сообщение",
+    "submit": "Отправить",
+    "sending": "Отправка...",
+    "success": "Сообщение успешно отправлено!",
+    "error": "Произошла ошибка, попробуйте ещё раз",
+    "required": "Обязательное поле",
+    "invalidEmail": "Неверный адрес электронной почты"
+  },
+  "accessibility": {
+    "skipToContent": "Перейти к основному содержимому",
+    "panel": {
+      "title": "Настройки доступности",
+      "fontSize": "Размер шрифта",
+      "fontSizeSmall": "Маленький",
+      "fontSizeMedium": "Средний",
+      "fontSizeLarge": "Большой",
+      "fontSizeExtraLarge": "Очень большой",
+      "contrast": "Контраст",
+      "contrastNormal": "Обычный",
+      "contrastHigh": "Высокий",
+      "motion": "Анимации",
+      "motionEnabled": "Включены",
+      "motionReduced": "Уменьшены",
+      "language": "Язык",
+      "close": "Закрыть"
+    }
+  },
+  "common": {
+    "learnMore": "Подробнее",
+    "phone": "Телефон",
+    "email": "Эл. почта",
+    "address": "Адрес",
+    "schedule": "Расписание"
+  },
+  "footer": {
+    "rights": "Все права защищены",
+    "accessibilityStatement": "Заявление о доступности"
+  }
+}

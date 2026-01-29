@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "سبورت داروم - الرياضة البارالمبية في جنوب البلاد",
+    "description": "انضموا إلينا للنشاط الرياضي البارالمبي في منطقة بئر السبع - 8 فروع رياضية لذوي الإعاقات"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "sports": "الرياضات",
+    "team": "فريقنا",
+    "stories": "قصص نجاح",
+    "contact": "اتصل بنا",
+    "accessibility": "إمكانية الوصول"
+  },
+  "hero": {
+    "title": "سبورت داروم",
+    "subtitle": "الرياضة البارالمبية في جنوب البلاد",
+    "cta": "انضموا إلينا"
+  },
+  "sports": {
+    "title": "رياضاتنا",
+    "athletics": {
+      "name": "ألعاب القوى",
+      "description": ""
+    },
+    "wheelchair-basketball": {
+      "name": "كرة السلة على الكراسي المتحركة",
+      "description": ""
+    },
+    "goalball": {
+      "name": "كرة الهدف",
+      "description": ""
+    },
+    "swimming": {
+      "name": "السباحة",
+      "description": ""
+    },
+    "bocce": {
+      "name": "البوتشي",
+      "description": ""
+    },
+    "hand-cycling": {
+      "name": "الدراجات اليدوية",
+      "description": ""
+    },
+    "judo": {
+      "name": "الجودو",
+      "description": ""
+    },
+    "archery": {
+      "name": "الرماية بالقوس",
+      "description": ""
+    }
+  },
+  "team": {
+    "title": "فريقنا",
+    "projectManager": "مدير/ة المشروع",
+    "headCoach": "المدرب الرئيسي",
+    "coach": "مدرب/ة"
+  },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "يسعدنا سماع أخباركم"
+  },
+  "form": {
+    "name": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "message": "الرسالة",
+    "submit": "إرسال",
+    "sending": "جاري الإرسال...",
+    "success": "تم إرسال الرسالة بنجاح!",
+    "error": "حدث خطأ، يرجى المحاولة مرة أخرى",
+    "required": "حقل مطلوب",
+    "invalidEmail": "عنوان بريد إلكتروني غير صالح"
+  },
+  "accessibility": {
+    "skipToContent": "انتقل إلى المحتوى الرئيسي",
+    "panel": {
+      "title": "إعدادات إمكانية الوصول",
+      "fontSize": "حجم الخط",
+      "fontSizeSmall": "صغير",
+      "fontSizeMedium": "متوسط",
+      "fontSizeLarge": "كبير",
+      "fontSizeExtraLarge": "كبير جداً",
+      "contrast": "التباين",
+      "contrastNormal": "عادي",
+      "contrastHigh": "عالي",
+      "motion": "الحركات",
+      "motionEnabled": "مفعل",
+      "motionReduced": "مخفض",
+      "language": "اللغة",
+      "close": "إغلاق"
+    }
+  },
+  "common": {
+    "learnMore": "لمزيد من المعلومات",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "address": "العنوان",
+    "schedule": "الجدول الزمني"
+  },
+  "footer": {
+    "rights": "جميع الحقوق محفوظة",
+    "accessibilityStatement": "بيان إمكانية الوصول"
+  }
+}

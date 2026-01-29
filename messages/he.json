@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "ספורט דרום - ספורט פראלימפי בדרום הארץ",
+    "description": "הצטרפו אלינו לפעילות ספורטיבית פראלימפית באזור באר שבע - 8 ענפי ספורט לאנשים עם מוגבלויות"
+  },
+  "navigation": {
+    "home": "בית",
+    "sports": "ענפי ספורט",
+    "team": "הצוות שלנו",
+    "stories": "סיפורי הצלחה",
+    "contact": "צור קשר",
+    "accessibility": "נגישות"
+  },
+  "hero": {
+    "title": "ספורט דרום",
+    "subtitle": "ספורט פראלימפי בדרום הארץ",
+    "cta": "הצטרפו אלינו"
+  },
+  "sports": {
+    "title": "ענפי הספורט שלנו",
+    "athletics": {
+      "name": "אתלטיקה",
+      "description": ""
+    },
+    "wheelchair-basketball": {
+      "name": "כדורסל כיסאות גלגלים",
+      "description": ""
+    },
+    "goalball": {
+      "name": "גולבול",
+      "description": ""
+    },
+    "swimming": {
+      "name": "שחייה",
+      "description": ""
+    },
+    "bocce": {
+      "name": "בוצ'ה",
+      "description": ""
+    },
+    "hand-cycling": {
+      "name": "אופניים ידניים",
+      "description": ""
+    },
+    "judo": {
+      "name": "ג'ודו",
+      "description": ""
+    },
+    "archery": {
+      "name": "קשתות",
+      "description": ""
+    }
+  },
+  "team": {
+    "title": "הצוות שלנו",
+    "projectManager": "מנהל/ת פרויקט",
+    "headCoach": "מאמן ראשי",
+    "coach": "מאמן/ת"
+  },
+  "contact": {
+    "title": "צרו קשר",
+    "subtitle": "נשמח לשמוע מכם"
+  },
+  "form": {
+    "name": "שם מלא",
+    "email": "דוא\"ל",
+    "phone": "טלפון",
+    "message": "הודעה",
+    "submit": "שלח",
+    "sending": "שולח...",
+    "success": "ההודעה נשלחה בהצלחה!",
+    "error": "אירעה שגיאה, אנא נסו שוב",
+    "required": "שדה חובה",
+    "invalidEmail": "כתובת דוא\"ל לא תקינה"
+  },
+  "accessibility": {
+    "skipToContent": "דלג לתוכן הראשי",
+    "panel": {
+      "title": "הגדרות נגישות",
+      "fontSize": "גודל גופן",
+      "fontSizeSmall": "קטן",
+      "fontSizeMedium": "בינוני",
+      "fontSizeLarge": "גדול",
+      "fontSizeExtraLarge": "גדול מאוד",
+      "contrast": "ניגודיות",
+      "contrastNormal": "רגיל",
+      "contrastHigh": "גבוה",
+      "motion": "תנועות",
+      "motionEnabled": "מופעל",
+      "motionReduced": "מופחת",
+      "language": "שפה",
+      "close": "סגור"
+    }
+  },
+  "common": {
+    "learnMore": "למידע נוסף",
+    "phone": "טלפון",
+    "email": "דוא\"ל",
+    "address": "כתובת",
+    "schedule": "לוח זמנים"
+  },
+  "footer": {
+    "rights": "כל הזכויות שמורות",
+    "accessibilityStatement": "הצהרת נגישות"
+  }
+}
