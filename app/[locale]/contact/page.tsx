@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { cn } from '@/src/lib/utils';
+import { PhoneIcon } from '@/src/components/icons';
 import { ContactForm } from '@/src/components/forms';
 
 interface ContactPageProps {
@@ -397,28 +398,6 @@ function ContactItem({ icon, label, sublabel, href, value, highlight }: ContactI
         {value}
       </span>
     </a>
-  );
-}
-
-/**
- * Phone icon
- */
-function PhoneIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className="w-5 h-5"
-      aria-hidden="true"
-    >
-      <path
-        d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.98C20.63 21.01 20.27 21.03 19.9 21.03C10.96 21.03 3.68 14.35 2.98 5.57C2.91 4.67 3.6 3.89 4.5 3.82L7.65 3.56C8.15 3.52 8.6 3.82 8.78 4.29L9.96 7.43C10.13 7.87 10.01 8.36 9.64 8.67L7.79 10.21C9.21 12.78 11.22 14.79 13.79 16.21L15.33 14.36C15.64 13.99 16.13 13.87 16.57 14.04L19.71 15.22C20.18 15.4 20.48 15.85 20.44 16.35L20.18 19.5C20.13 20.02 19.68 20.42 19.16 20.42"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   );
 }
 

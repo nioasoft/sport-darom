@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { sports, getSportBySlug, getSportName, type Sport } from '@/src/lib/sports';
 import { cn } from '@/src/lib/utils';
 import { ImageGallery } from './ImageGallery';
@@ -189,7 +189,7 @@ export default async function SportPage({ params }: SportPageProps) {
                 <ul className="space-y-3">
                   <li>
                     <Link
-                      href={`/${locale}/contact`}
+                      href="/contact"
                       className={cn(
                         'flex items-center gap-2',
                         'text-[var(--color-primary-700)]',
@@ -204,7 +204,7 @@ export default async function SportPage({ params }: SportPageProps) {
                   </li>
                   <li>
                     <Link
-                      href={`/${locale}/sports`}
+                      href="/sports"
                       className={cn(
                         'flex items-center gap-2',
                         'text-[var(--color-primary-700)]',
@@ -298,7 +298,7 @@ function SportHero({
           <ol className="flex items-center gap-2 text-[var(--color-primary-300)]">
             <li>
               <Link
-                href={`/${locale}`}
+                href="/"
                 className={cn(
                   'hover:text-white transition-colors duration-[var(--duration-fast)]',
                   'text-[calc(var(--text-sm)*var(--font-scale))]'
@@ -312,7 +312,7 @@ function SportHero({
             </li>
             <li>
               <Link
-                href={`/${locale}/sports`}
+                href="/sports"
                 className={cn(
                   'hover:text-white transition-colors duration-[var(--duration-fast)]',
                   'text-[calc(var(--text-sm)*var(--font-scale))]'

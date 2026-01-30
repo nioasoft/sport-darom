@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/src/lib/utils';
 import { useReducedMotion } from '@/src/hooks/useReducedMotion';
+import { useUI } from '@/src/contexts/UIContext';
 import { Navigation } from './Navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
@@ -182,7 +183,7 @@ function HamburgerButton({
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isMobileMenuOpen, setMobileMenuOpen } = useUI();
   const headerRef = useRef<HTMLElement>(null);
   const prefersReducedMotion = useReducedMotion();
 
@@ -223,7 +224,7 @@ export function Header() {
 
   // Handle closing mobile menu (passed to MobileMenu, which closes on navigation)
   const handleCloseMobileMenu = () => {
-    setIsMobileMenuOpen(false);
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -284,7 +285,7 @@ export function Header() {
               {/* Mobile menu button */}
               <HamburgerButton
                 isOpen={isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
                 className="lg:hidden"
                 prefersReducedMotion={prefersReducedMotion}
               />

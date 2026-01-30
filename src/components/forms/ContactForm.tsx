@@ -5,6 +5,7 @@ import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/src/lib/utils';
 import { useReducedMotion } from '@/src/hooks/useReducedMotion';
+import { TrophyIcon, MedalIcon } from '@/src/components/icons';
 import { Input } from '@/src/components/ui/Input';
 import { Textarea } from '@/src/components/ui/Textarea';
 import { Button } from '@/src/components/ui/Button';
@@ -557,33 +558,6 @@ export function ContactForm({ className, onSubmit: customSubmit }: ContactFormPr
 }
 
 /**
- * Trophy icon for success state
- */
-function TrophyIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <path
-        d="M6.5 5H4C4 8.5 6 10 7.5 11C7.5 11 6 12.5 6 15H18C18 12.5 16.5 11 16.5 11C18 10 20 8.5 20 5H17.5M6.5 5V3H17.5V5M6.5 5H17.5M12 15V18M8 21H16M8 21V18H16V21M8 21H16"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 8L12.5 9.5H14L12.75 10.5L13.25 12L12 11L10.75 12L11.25 10.5L10 9.5H11.5L12 8Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
-
-/**
  * Error icon
  */
 function ErrorIcon({ className }: { className?: string }) {
@@ -624,45 +598,6 @@ function SendIcon({ className }: { className?: string }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-/**
- * Medal decorative icon
- */
-function MedalIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      aria-hidden="true"
-    >
-      <circle
-        cx="12"
-        cy="15"
-        r="6"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      />
-      <path
-        d="M12 12L10.5 14L11 16L12 15.5L13 16L13.5 14L12 12Z"
-        fill="currentColor"
-      />
-      <path
-        d="M8.5 3L10 9M15.5 3L14 9"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M7 3H17"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
       />
     </svg>
   );

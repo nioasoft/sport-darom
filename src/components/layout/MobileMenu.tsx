@@ -5,18 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { cn } from '@/src/lib/utils';
-
-// Sports data for dropdown
-const sports = [
-  { slug: 'athletics', icon: '🏃' },
-  { slug: 'wheelchair-basketball', icon: '🏀' },
-  { slug: 'goalball', icon: '⚽' },
-  { slug: 'swimming', icon: '🏊' },
-  { slug: 'bocce', icon: '🎯' },
-  { slug: 'hand-cycling', icon: '🚴' },
-  { slug: 'judo', icon: '🥋' },
-  { slug: 'archery', icon: '🎯' },
-] as const;
+import { sports } from '@/src/lib/sports';
 
 // Language configuration
 const languages = [

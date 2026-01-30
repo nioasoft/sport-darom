@@ -12,6 +12,7 @@ import { useAccessibility, type FontSize } from '@/src/hooks/useAccessibility';
 import { useRouter, usePathname } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import { cn } from '@/src/lib/utils';
+import { useUI } from '@/src/contexts/UIContext';
 
 // Language configuration
 const languages = [
@@ -338,6 +339,7 @@ export function AccessibilityPanel() {
   const [isOpen, setIsOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const { isMobileMenuOpen } = useUI();
 
   const {
     preferences,
@@ -423,6 +425,11 @@ export function AccessibilityPanel() {
   };
 
   const t = labels[locale as keyof typeof labels] || labels.he;
+
+  // Hide panel when mobile menu is open
+  if (isMobileMenuOpen) {
+    return null;
+  }
 
   return (
     <div

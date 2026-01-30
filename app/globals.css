@@ -188,24 +188,43 @@ body {
   outline: none;
 }
 
+/* Skip links container */
+.skip-links-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  pointer-events: none;
+}
+
 /* Skip link styles */
 .skip-link {
   position: absolute;
   top: -100%;
-  left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(0);
   background: var(--foreground);
   color: var(--background);
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-md);
   font-weight: 600;
-  z-index: 9999;
   text-decoration: none;
   transition: top var(--duration-fast) ease;
+  pointer-events: auto;
+  white-space: nowrap;
 }
 
 .skip-link:focus {
+  position: relative;
   top: var(--space-4);
+}
+
+/* RTL support for skip links */
+[dir="rtl"] .skip-links-container {
+  flex-direction: row-reverse;
 }
 
 /* Ensure minimum touch target size (44x44px) for accessibility */

@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import { motion, useInView, type Variants } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { cn } from '@/src/lib/utils';
 import { useReducedMotion } from '@/src/hooks/useReducedMotion';
@@ -132,7 +132,7 @@ export function SportCard({ sport, index = 0, className }: SportCardProps) {
     >
       <Link
         ref={cardRef}
-        href={`/${locale}/sports/${sport.slug}`}
+        href={`/sports/${sport.slug}`}
         className="block outline-none group"
         aria-label={`${sportName} - ${tCommon('learnMore')}`}
       >

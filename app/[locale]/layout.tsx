@@ -7,6 +7,7 @@ import { routing } from '@/i18n/routing';
 import { SkipLinks } from '@/src/components/accessibility/SkipLinks';
 import { Header, Footer } from '@/src/components/layout';
 import { AccessibilityPanel } from '@/src/components/accessibility/AccessibilityPanel';
+import { UIProvider } from '@/src/contexts/UIContext';
 import '../globals.css';
 
 // Configure Noto Sans with all required subsets
@@ -89,13 +90,15 @@ export default async function LocaleLayout({
         className={`${notoSans.variable} ${notoSansHebrew.variable} ${notoSansArabic.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <SkipLinks />
-          <Header />
-          <main id="main-content" tabIndex={-1} className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
-          <AccessibilityPanel />
+          <UIProvider>
+            <SkipLinks />
+            <Header />
+            <main id="main-content" tabIndex={-1} className="min-h-screen">
+              {children}
+            </main>
+            <Footer />
+            <AccessibilityPanel />
+          </UIProvider>
         </NextIntlClientProvider>
       </body>
     </html>

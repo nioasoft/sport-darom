@@ -3,18 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/src/lib/utils';
-
-// Sports data for quick links
-const sports = [
-  { slug: 'athletics' },
-  { slug: 'wheelchair-basketball' },
-  { slug: 'goalball' },
-  { slug: 'swimming' },
-  { slug: 'bocce' },
-  { slug: 'hand-cycling' },
-  { slug: 'judo' },
-  { slug: 'archery' },
-] as const;
+import { sports } from '@/src/lib/sports';
 
 // Contact information
 const contactInfo = {
