@@ -201,25 +201,37 @@ body {
   pointer-events: none;
 }
 
-/* Skip link styles */
+/* Skip link styles - sr-only pattern */
 .skip-link {
   position: absolute;
-  top: -100%;
-  transform: translateY(0);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  /* Styling for when focused */
   background: var(--foreground);
   color: var(--background);
-  padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-md);
   font-weight: 600;
   text-decoration: none;
-  transition: top var(--duration-fast) ease;
-  pointer-events: auto;
-  white-space: nowrap;
 }
 
 .skip-link:focus {
-  position: relative;
+  position: fixed;
   top: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: auto;
+  height: auto;
+  padding: var(--space-3) var(--space-6);
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  border-radius: var(--radius-md);
 }
 
 /* RTL support for skip links */
