@@ -77,7 +77,7 @@ function Logo({ className }: { className?: string }) {
           'text-[var(--color-primary-900)]',
           'tracking-tight'
         )}>
-          ספורט דרום
+          ספורט פראלימפי דרום
         </span>
         {/* Decorative English text - hidden from screen readers */}
         <span

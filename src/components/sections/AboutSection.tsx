@@ -17,6 +17,7 @@ export interface AboutSectionProps {
 
 // Feature keys for mapping to translations
 const featureKeys = [
+  'whoFits',
   'personalAttention',
   'safeEnvironment',
   'professionalCoaches',
@@ -27,6 +28,7 @@ const featureKeys = [
 
 // Icons for each feature
 const featureIcons: Record<string, React.FC<{ className?: string }>> = {
+  whoFits: AudienceIcon,
   personalAttention: PersonIcon,
   safeEnvironment: ShieldIcon,
   professionalCoaches: StarIcon,
@@ -40,7 +42,7 @@ const featureIcons: Record<string, React.FC<{ className?: string }>> = {
  *
  * A compelling "Why Sport Darom?" section for the homepage.
  * Features:
- * - Six key value propositions for parents
+ * - Seven key value propositions for parents
  * - Warm, personal messaging
  * - Full RTL support
  * - WCAG AAA compliant (7:1+ contrast)
@@ -394,6 +396,27 @@ function PersonIcon({ className }: { className?: string }) {
       <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" />
       <path
         d="M5 21V19C5 16.7909 6.79086 15 9 15H15C17.2091 15 19 16.7909 19 19V21"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function AudienceIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <circle cx="9" cy="8" r="3" stroke="currentColor" strokeWidth="2" />
+      <circle cx="17" cy="9" r="2.5" stroke="currentColor" strokeWidth="2" />
+      <path
+        d="M4 20C4 16.6863 6.68629 14 10 14H12C15.3137 14 18 16.6863 18 20"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M16 14.5C18.4556 15.0908 20 16.8993 20 19"
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"

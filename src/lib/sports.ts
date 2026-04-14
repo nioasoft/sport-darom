@@ -46,7 +46,7 @@ export const sports: Sport[] = [
   {
     slug: 'goalball',
     names: {
-      he: 'גולבול',
+      he: 'כדור שער',
       ar: 'كرة الهدف',
       ru: 'Голбол',
     },
@@ -82,7 +82,7 @@ export const sports: Sport[] = [
   {
     slug: 'hand-cycling',
     names: {
-      he: 'אופניים ידניים',
+      he: 'אופני יד',
       ar: 'الدراجات اليدوية',
       ru: 'Ручной велосипед',
     },
@@ -106,7 +106,7 @@ export const sports: Sport[] = [
   {
     slug: 'archery',
     names: {
-      he: 'קשתות',
+      he: 'חץ וקשת',
       ar: 'الرماية بالقوس',
       ru: 'Стрельба из лука',
     },

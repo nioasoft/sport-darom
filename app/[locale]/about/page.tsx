@@ -1,10 +1,12 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/src/lib/utils';
 import { HeartIcon, TrophyIcon, StarIcon } from '@/src/components/icons';
 import { sports } from '@/src/lib/sports';
+import { getImageAlt, getImagePath, getSportImage, type Locale } from '@/src/lib/images';
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;
@@ -482,10 +484,8 @@ export default async function AboutPage({ params }: AboutPageProps) {
               <Link
                 key={sport.slug}
                 href={`/sports/${sport.slug}`}
-               
                 className={cn(
-                  'flex flex-col items-center p-4',
-                  'rounded-[var(--radius-lg)]',
+                  'group overflow-hidden rounded-[var(--radius-lg)]',
                   'bg-[var(--background)]',
                   'border border-[var(--color-primary-200)]',
                   'hover:border-[var(--color-accent-400)]',
@@ -495,21 +495,45 @@ export default async function AboutPage({ params }: AboutPageProps) {
                   'transition-all duration-[var(--duration-normal)]'
                 )}
               >
-                <span
-                  className="text-3xl mb-2"
-                  aria-hidden="true"
-                >
-                  {sport.icon}
-                </span>
-                <span
-                  className={cn(
-                    'text-[calc(var(--text-sm)*var(--font-scale))]',
-                    'font-medium text-[var(--color-primary-900)]',
-                    'text-center'
-                  )}
-                >
-                  {tSports(`${sport.slug}.name`)}
-                </span>
+                <div className="relative h-28 overflow-hidden bg-[var(--color-primary-100)]">
+                  {(() => {
+                    const imageConfig = getSportImage(sport.slug);
+
+                    if (!imageConfig) {
+                      return (
+                        <div className="flex h-full items-center justify-center text-3xl" aria-hidden="true">
+                          {sport.icon}
+                        </div>
+                      );
+                    }
+
+                    return (
+                      <Image
+                        src={getImagePath(imageConfig)}
+                        alt={getImageAlt(imageConfig, locale as Locale)}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 640px) 50vw, 25vw"
+                      />
+                    );
+                  })()}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-900)]/30 via-transparent to-transparent"
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <div className="p-4">
+                  <span
+                    className={cn(
+                      'block text-[calc(var(--text-sm)*var(--font-scale))]',
+                      'font-medium text-[var(--color-primary-900)]',
+                      'text-center'
+                    )}
+                  >
+                    {tSports(`${sport.slug}.name`)}
+                  </span>
+                </div>
               </Link>
             ))}
           </div>

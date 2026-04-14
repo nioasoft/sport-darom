@@ -173,7 +173,7 @@ export function Footer() {
               </div>
               <div>
                 <span className="block text-[var(--text-xl)] font-bold">
-                  ספורט דרום
+                  ספורט פראלימפי דרום
                 </span>
                 <span className="block text-[var(--text-xs)] text-[var(--color-accent-300)] uppercase tracking-wider">
                   Paralympic Sports

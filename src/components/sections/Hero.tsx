@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { cn } from '@/src/lib/utils';
 import { useReducedMotion } from '@/src/hooks/useReducedMotion';
+import { HeartIcon, TrophyIcon } from '@/src/components/icons';
 
 export interface HeroProps {
   /** Background image source */
@@ -35,6 +36,11 @@ export function Hero({
   className,
 }: HeroProps) {
   const t = useTranslations('hero');
+  const partnerLogos = [
+    { key: 'spivak', icon: BuildingIcon },
+    { key: 'ilan', icon: HeartIcon },
+    { key: 'paralympic', icon: TrophyIcon },
+  ] as const;
   const prefersReducedMotion = useReducedMotion();
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
@@ -146,7 +152,7 @@ export function Hero({
               src={backgroundImage}
               alt={backgroundAlt || ''}
               fill
-              className="object-cover"
+              className="object-cover object-[72%_22%] sm:object-[70%_24%] md:object-[68%_26%] lg:object-[66%_30%]"
               priority
               sizes="100vw"
             />
@@ -255,6 +261,38 @@ export function Hero({
           'max-w-7xl mx-auto w-full'
         )}
       >
+        <motion.div
+          variants={subtitleVariants}
+          className="mb-[var(--space-6)] flex max-w-4xl flex-wrap gap-3"
+        >
+          {partnerLogos.map(({ key, icon: Icon }) => (
+            <div
+              key={key}
+              className={cn(
+                'inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/10 px-4 py-2',
+                'backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.14)]'
+              )}
+            >
+              <span
+                className={cn(
+                  'flex h-8 w-8 items-center justify-center rounded-full',
+                  'bg-white/14 text-[var(--color-accent-300)]'
+                )}
+              >
+                <Icon className="h-4 w-4" />
+              </span>
+              <span
+                className={cn(
+                  'text-[var(--text-sm)] font-semibold text-white',
+                  'text-[calc(var(--text-sm)*var(--font-scale))]'
+                )}
+              >
+                {t(`partners.${key}`)}
+              </span>
+            </div>
+          ))}
+        </motion.div>
+
         {/* Animated gold accent line above title */}
         <motion.div
           variants={decorativeLineVariants}
@@ -275,6 +313,7 @@ export function Hero({
             // Typography - bold, commanding presence
             'text-[clamp(2.5rem,8vw,5rem)]',
             'font-bold leading-[1.1] tracking-tight',
+            'max-w-4xl',
             // Color - white for maximum contrast (15.1:1 against primary-900)
             'text-white',
             // Text shadow for additional depth
@@ -451,6 +490,20 @@ export function Hero({
         </motion.div>
       </motion.div>
     </section>
+  );
+}
+
+function BuildingIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M4 21H20M6 21V7L12 4L18 7V21M9 10H10M14 10H15M9 14H10M14 14H15"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
