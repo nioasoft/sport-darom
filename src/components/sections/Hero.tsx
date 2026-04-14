@@ -313,7 +313,7 @@ export function Hero({
             // Typography - bold, commanding presence
             'text-[clamp(2.5rem,8vw,5rem)]',
             'font-bold leading-[1.1] tracking-tight',
-            'max-w-4xl',
+            'max-w-none sm:max-w-[12ch] lg:max-w-none',
             // Color - white for maximum contrast (15.1:1 against primary-900)
             'text-white',
             // Text shadow for additional depth
