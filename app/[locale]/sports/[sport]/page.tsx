@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
 import { sports, getSportBySlug, getSportName, type Sport } from '@/src/lib/sports';
+import { galleryImages, getImageAlt, getImagePath } from '@/src/lib/images';
 import { cn } from '@/src/lib/utils';
 import { ImageGallery } from './ImageGallery';
 import { CoachInfo } from './CoachInfo';
@@ -151,7 +152,15 @@ export default async function SportPage({ params }: SportPageProps) {
                 {t('gallery') || 'גלריה'}
               </h2>
 
-              <ImageGallery sportSlug={sport.slug} sportName={sportName} />
+              <ImageGallery
+                sportSlug={sport.slug}
+                sportName={sportName}
+                images={(galleryImages[sport.slug] ?? []).map((img) => ({
+                  src: getImagePath(img),
+                  alt: getImageAlt(img, locale as 'he' | 'ar' | 'ru'),
+                  orientation: img.orientation,
+                }))}
+              />
             </section>
           </div>
 
