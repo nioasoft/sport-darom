@@ -152,7 +152,7 @@ export function Hero({
               src={backgroundImage}
               alt={backgroundAlt || ''}
               fill
-              className="object-cover object-[55%_5%] sm:object-[55%_8%] md:object-[55%_10%] lg:object-[55%_12%]"
+              className="object-cover object-[55%_10%] scale-[1.15] -translate-x-[8%] sm:-translate-x-[8%] md:-translate-x-[9%] lg:-translate-x-[10%]"
               priority
               sizes="100vw"
             />
