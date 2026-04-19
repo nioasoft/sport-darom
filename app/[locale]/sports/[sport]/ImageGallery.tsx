@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { motion, useInView, type Variants } from 'framer-motion';
 import { cn } from '@/src/lib/utils';
@@ -17,7 +18,14 @@ interface ImageGalleryProps {
   sportName: string;
   images?: GalleryImage[];
   className?: string;
+  /** How many images to show before the "load more" button appears. */
+  initialCount?: number;
+  /** How many additional images to reveal each time the button is clicked. */
+  pageSize?: number;
 }
+
+const DEFAULT_INITIAL = 12;
+const DEFAULT_PAGE_SIZE = 12;
 
 /**
  * ImageGallery Component
@@ -35,8 +43,12 @@ export function ImageGallery({
   sportName,
   images,
   className,
+  initialCount = DEFAULT_INITIAL,
+  pageSize = DEFAULT_PAGE_SIZE,
 }: ImageGalleryProps) {
+  const t = useTranslations('sports');
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(initialCount);
   const prefersReducedMotion = useReducedMotion();
   const galleryRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(galleryRef, { once: true, amount: 0.1 });
@@ -64,6 +76,11 @@ export function ImageGallery({
       orientation: 'horizontal',
     },
   ];
+
+  const total = galleryImages.length;
+  const shown = Math.min(visibleCount, total);
+  const hasMore = shown < total;
+  const visibleImages = galleryImages.slice(0, shown);
 
   // Animation variants
   const containerVariants: Variants = {
@@ -130,7 +147,7 @@ export function ImageGallery({
         role="grid"
         aria-label={`${sportName} photo gallery`}
       >
-        {galleryImages.map((image, index) => (
+        {visibleImages.map((image, index) => (
           <motion.button
             key={index}
             variants={itemVariants}
@@ -212,6 +229,52 @@ export function ImageGallery({
           </motion.button>
         ))}
       </motion.div>
+
+      {/* Load more */}
+      {total > initialCount && (
+        <div className="mt-[var(--space-6)] flex flex-col items-center gap-[var(--space-3)]">
+          <p
+            className={cn(
+              'text-[var(--text-sm)] text-[var(--color-primary-600)]',
+              'text-[calc(var(--text-sm)*var(--font-scale))]'
+            )}
+            aria-live="polite"
+          >
+            {t('showingImages', { shown, total })}
+          </p>
+          {hasMore && (
+            <button
+              type="button"
+              onClick={() =>
+                setVisibleCount((n) => Math.min(n + pageSize, total))
+              }
+              className={cn(
+                'inline-flex items-center gap-2',
+                'px-[var(--space-5)] py-[var(--space-3)]',
+                'rounded-[var(--radius-full)]',
+                'bg-[var(--color-primary-900)] text-white',
+                'hover:bg-[var(--color-primary-800)]',
+                'transition-colors duration-[var(--duration-fast)]',
+                'focus-visible:outline focus-visible:outline-[var(--focus-ring-width)]',
+                'focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring-color)]',
+                'text-[calc(var(--text-base)*var(--font-scale))] font-medium'
+              )}
+              aria-label={`${t('loadMore')} (${total - shown})`}
+            >
+              <span>{t('loadMore')}</span>
+              <span
+                className={cn(
+                  'inline-flex items-center justify-center',
+                  'min-w-[1.5rem] h-6 px-2 rounded-full',
+                  'bg-white/15 text-[var(--text-xs)]'
+                )}
+              >
+                {total - shown}
+              </span>
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Lightbox Modal */}
       {selectedImage !== null && (

@@ -263,27 +263,38 @@ export function Hero({
       >
         <motion.div
           variants={subtitleVariants}
-          className="mb-[var(--space-6)] flex max-w-4xl flex-wrap gap-3"
+          className={cn(
+            'flex max-w-4xl gap-2',
+            // Mobile: stack vertically, sit AFTER the CTA so the chips don't
+            // overlap the athlete's face in the hero image. items-start +
+            // RTL document puts them on the right side ("למטה מימין").
+            'order-last flex-col items-start mt-[var(--space-6)] gap-2',
+            // Desktop: original behavior — horizontal row above the title.
+            'md:order-none md:flex-row md:flex-wrap md:items-center md:gap-3 md:mt-0 md:mb-[var(--space-6)]'
+          )}
         >
           {partnerLogos.map(({ key, icon: Icon }) => (
             <div
               key={key}
               className={cn(
-                'inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/10 px-4 py-2',
+                'inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/10',
+                // Slightly tighter padding on mobile to fit longer org names.
+                'px-3 py-1.5 md:px-4 md:py-2',
                 'backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.14)]'
               )}
             >
               <span
                 className={cn(
-                  'flex h-8 w-8 items-center justify-center rounded-full',
+                  'flex items-center justify-center rounded-full',
+                  'h-7 w-7 md:h-8 md:w-8',
                   'bg-white/14 text-[var(--color-accent-300)]'
                 )}
               >
-                <Icon className="h-4 w-4" />
+                <Icon className="h-3.5 w-3.5 md:h-4 md:w-4" />
               </span>
               <span
                 className={cn(
-                  'text-[var(--text-sm)] font-semibold text-white',
+                  'text-[var(--text-xs)] md:text-[var(--text-sm)] font-semibold text-white',
                   'text-[calc(var(--text-sm)*var(--font-scale))]'
                 )}
               >

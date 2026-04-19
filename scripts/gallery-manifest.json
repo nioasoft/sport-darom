@@ -1,0 +1,1034 @@
+{
+  "swimming": [
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/01.webp",
+      "orientation": "horizontal",
+      "width": 1920,
+      "height": 1282,
+      "sourceFile": "במים יום ספורט.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/02.webp",
+      "orientation": "horizontal",
+      "width": 1920,
+      "height": 1282,
+      "sourceFile": "במים.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/03.webp",
+      "orientation": "horizontal",
+      "width": 523,
+      "height": 391,
+      "sourceFile": "ליאב.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/04.webp",
+      "orientation": "vertical",
+      "width": 1200,
+      "height": 1600,
+      "sourceFile": "עלמה בתחרות.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/05.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01094.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/06.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01120.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/07.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01175.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/08.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01190.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/09.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01254.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/10.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01265.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/11.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01269 - Copy.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/12.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01271 - Copy.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/13.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01277 - Copy.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/14.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01278 - Copy.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/15.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01281 - Copy.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/16.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01319 - Copy.jpeg"
+    },
+    {
+      "slug": "swimming",
+      "src": "sports/swimming/17.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01322 - Copy.jpeg"
+    }
+  ],
+  "athletics": [
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/01.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1239,
+      "sourceFile": "אתלטיקה ביום ספורט.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/02.webp",
+      "orientation": "vertical",
+      "width": 1282,
+      "height": 1920,
+      "sourceFile": "אתלטיקה לאון.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/03.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 716,
+      "sourceFile": "מנואל 2.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/04.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 733,
+      "sourceFile": "מנואל 3.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/05.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 705,
+      "sourceFile": "מנואל 4.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/06.webp",
+      "orientation": "vertical",
+      "width": 1073,
+      "height": 1600,
+      "sourceFile": "מנואל וטימור.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/07.webp",
+      "orientation": "vertical",
+      "width": 1079,
+      "height": 1600,
+      "sourceFile": "מנואל עם מדליה.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/08.webp",
+      "orientation": "vertical",
+      "width": 736,
+      "height": 1251,
+      "sourceFile": "מנואל.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/09.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 723,
+      "sourceFile": "מנואל1.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/10.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1068,
+      "sourceFile": "מתן.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/11.webp",
+      "orientation": "horizontal",
+      "width": 1005,
+      "height": 900,
+      "sourceFile": "ריצה.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/12.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01487.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/13.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01488.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/14.webp",
+      "orientation": "vertical",
+      "width": 854,
+      "height": 1280,
+      "sourceFile": "DSC01493.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/15.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01497.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/16.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01501.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/17.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01506.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/18.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01510.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/19.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01547.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/20.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01549.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/21.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01563.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/22.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01565.jpeg"
+    },
+    {
+      "slug": "athletics",
+      "src": "sports/athletics/23.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01603.jpeg"
+    }
+  ],
+  "hand-cycling": [
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/01.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1200,
+      "sourceFile": "אופני יד כולם ביחד.jpeg"
+    },
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/02.webp",
+      "orientation": "horizontal",
+      "width": 1920,
+      "height": 1440,
+      "sourceFile": "אופני יד לאון.jpeg"
+    },
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/03.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1067,
+      "sourceFile": "אופניים.jpeg"
+    },
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/04.webp",
+      "orientation": "vertical",
+      "width": 884,
+      "height": 1200,
+      "sourceFile": "בפארק הסופרים.jpeg"
+    },
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/05.webp",
+      "orientation": "horizontal",
+      "width": 1257,
+      "height": 671,
+      "sourceFile": "לאון.jpeg"
+    },
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/06.webp",
+      "orientation": "vertical",
+      "width": 822,
+      "height": 1200,
+      "sourceFile": "ליד הטניס 2.jpeg"
+    },
+    {
+      "slug": "hand-cycling",
+      "src": "sports/hand-cycling/07.webp",
+      "orientation": "vertical",
+      "width": 994,
+      "height": 1200,
+      "sourceFile": "ליד הטניס.jpeg"
+    }
+  ],
+  "goalball": [
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/01.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 661,
+      "sourceFile": "כדור שער 2.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/02.webp",
+      "orientation": "horizontal",
+      "width": 1920,
+      "height": 1281,
+      "sourceFile": "כדור שער ביום ספורט.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/03.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 606,
+      "sourceFile": "כדור שער בנים.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/04.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 708,
+      "sourceFile": "כדור שער זריקת כדור.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/05.webp",
+      "orientation": "horizontal",
+      "width": 839,
+      "height": 681,
+      "sourceFile": "כדור שער ליהיא.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/06.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 707,
+      "sourceFile": "כדור שער תחרות.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/07.webp",
+      "orientation": "horizontal",
+      "width": 1079,
+      "height": 890,
+      "sourceFile": "כדור-שער.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/08.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 592,
+      "sourceFile": "כדורשער בנים.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/09.webp",
+      "orientation": "horizontal",
+      "width": 1080,
+      "height": 890,
+      "sourceFile": "כדורשער.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/10.webp",
+      "orientation": "horizontal",
+      "width": 1653,
+      "height": 1104,
+      "sourceFile": "ליאב כדור שער.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/11.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1066,
+      "sourceFile": "ליהיא כדור שער בבית העיוור.jpeg"
+    },
+    {
+      "slug": "goalball",
+      "src": "sports/goalball/12.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1095,
+      "sourceFile": "ליהיא.jpeg"
+    }
+  ],
+  "archery": [
+    {
+      "slug": "archery",
+      "src": "sports/archery/01.webp",
+      "orientation": "vertical",
+      "width": 1200,
+      "height": 1600,
+      "sourceFile": "גדי וליאור.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/02.webp",
+      "orientation": "horizontal",
+      "width": 1242,
+      "height": 1152,
+      "sourceFile": "יותם וורד.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/03.webp",
+      "orientation": "vertical",
+      "width": 890,
+      "height": 1193,
+      "sourceFile": "לאון בחץ וקשת.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/04.webp",
+      "orientation": "vertical",
+      "width": 900,
+      "height": 1600,
+      "sourceFile": "לאון עם החיצים.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/05.webp",
+      "orientation": "vertical",
+      "width": 1056,
+      "height": 1152,
+      "sourceFile": "ליאור.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/06.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01326.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/07.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01333.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/08.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01334.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/09.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01340.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/10.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01349.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/11.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01350.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/12.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01358.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/13.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01364.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/14.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01365.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/15.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01370.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/16.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01375.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/17.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01378.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/18.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01380.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/19.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01392.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/20.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01399.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/21.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01404.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/22.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01408.jpeg"
+    },
+    {
+      "slug": "archery",
+      "src": "sports/archery/23.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01441.jpeg"
+    }
+  ],
+  "wheelchair-basketball": [
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/01.webp",
+      "orientation": "vertical",
+      "width": 1282,
+      "height": 1920,
+      "sourceFile": "אלירז וגדי.jpeg"
+    },
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/02.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1068,
+      "sourceFile": "כדורסל ילד.jpeg"
+    },
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/03.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1069,
+      "sourceFile": "כדורסל לפלייר 2.jpg"
+    },
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/04.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1068,
+      "sourceFile": "כדורסל לפלייר.jpg"
+    },
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/05.webp",
+      "orientation": "vertical",
+      "width": 1069,
+      "height": 1583,
+      "sourceFile": "כדורסל מקצועי 2.jpeg"
+    },
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/06.webp",
+      "orientation": "horizontal",
+      "width": 1073,
+      "height": 666,
+      "sourceFile": "כדורסל מקצועי 3.jpeg"
+    },
+    {
+      "slug": "wheelchair-basketball",
+      "src": "sports/wheelchair-basketball/07.webp",
+      "orientation": "vertical",
+      "width": 1076,
+      "height": 1566,
+      "sourceFile": "כדורסל מקצועי.jpeg"
+    }
+  ],
+  "bocce": [
+    {
+      "slug": "bocce",
+      "src": "sports/bocce/01.webp",
+      "orientation": "horizontal",
+      "width": 1211,
+      "height": 900,
+      "sourceFile": "בוצה 1.jpg"
+    },
+    {
+      "slug": "bocce",
+      "src": "sports/bocce/02.webp",
+      "orientation": "horizontal",
+      "width": 1600,
+      "height": 1200,
+      "sourceFile": "בוצה ביום ספורט.jpeg"
+    },
+    {
+      "slug": "bocce",
+      "src": "sports/bocce/03.webp",
+      "orientation": "horizontal",
+      "width": 1920,
+      "height": 1282,
+      "sourceFile": "בוצה יום ספורט.jpeg"
+    },
+    {
+      "slug": "bocce",
+      "src": "sports/bocce/04.webp",
+      "orientation": "vertical",
+      "width": 1282,
+      "height": 1920,
+      "sourceFile": "בוצה צביקה.jpeg"
+    },
+    {
+      "slug": "bocce",
+      "src": "sports/bocce/05.webp",
+      "orientation": "horizontal",
+      "width": 1920,
+      "height": 1282,
+      "sourceFile": "בוצה.jpeg"
+    }
+  ],
+  "judo": [
+    {
+      "slug": "judo",
+      "src": "sports/judo/01.webp",
+      "orientation": "vertical",
+      "width": 857,
+      "height": 1200,
+      "sourceFile": "ג_ודו.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/02.webp",
+      "orientation": "vertical",
+      "width": 832,
+      "height": 1598,
+      "sourceFile": "גודו.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/03.webp",
+      "orientation": "vertical",
+      "width": 900,
+      "height": 1600,
+      "sourceFile": "עם אבי.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/04.webp",
+      "orientation": "vertical",
+      "width": 934,
+      "height": 1200,
+      "sourceFile": "קרב.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/05.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01765.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/06.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01836.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/07.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01839.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/08.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01871.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/09.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01872.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/10.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01874.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/11.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01876.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/12.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01901.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/13.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01915.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/14.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01928.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/15.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01929.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/16.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01935.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/17.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01936.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/18.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01937.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/19.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01938.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/20.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01943.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/21.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01944.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/22.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01946.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/23.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01951.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/24.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01952.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/25.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01955.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/26.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01958.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/27.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01959.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/28.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01965.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/29.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01967.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/30.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01968.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/31.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01973.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/32.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01974.jpeg"
+    },
+    {
+      "slug": "judo",
+      "src": "sports/judo/33.webp",
+      "orientation": "horizontal",
+      "width": 1280,
+      "height": 854,
+      "sourceFile": "DSC01977.jpeg"
+    }
+  ]
+}
