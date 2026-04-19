@@ -265,12 +265,12 @@ export function Hero({
           variants={subtitleVariants}
           className={cn(
             'flex max-w-4xl gap-2',
-            // Mobile: stack vertically, sit AFTER the CTA so the chips don't
-            // overlap the athlete's face in the hero image. items-start +
-            // RTL document puts them on the right side ("למטה מימין").
-            'order-last flex-col items-start mt-[var(--space-6)] gap-2',
-            // Desktop: original behavior — horizontal row above the title.
-            'md:order-none md:flex-row md:flex-wrap md:items-center md:gap-3 md:mt-0 md:mb-[var(--space-6)]'
+            // Always render the partner chips AFTER the CTA. The hero image
+            // puts the athlete's face in the upper half at every breakpoint,
+            // so placing them at the bottom keeps it clear.
+            'order-last items-start mt-[var(--space-8)]',
+            // Mobile: vertical stack. Desktop: horizontal wrap.
+            'flex-col md:flex-row md:flex-wrap md:items-center md:gap-3'
           )}
         >
           {partnerLogos.map(({ key, icon: Icon }) => (
