@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation';
 import { cn } from '@/src/lib/utils';
 import { HeartIcon, TrophyIcon, StarIcon } from '@/src/components/icons';
 import { sports } from '@/src/lib/sports';
+import { partnerLinks, type PartnerKey } from '@/src/lib/partners';
 import { getImageAlt, getImagePath, getSportImage, type Locale } from '@/src/lib/images';
 
 interface AboutPageProps {
@@ -27,7 +28,7 @@ export async function generateMetadata({
   };
 
   const descriptions: Record<string, string> = {
-    he: 'הכירו את ספורט דרום - פרויקט ספורט פראלימפי באזור באר שבע והדרום. שיתוף פעולה בין מרכז ספיבק, עמותת אילן ואיגוד הספורט הפראלימפי',
+    he: 'הכירו את ספורט דרום - פרויקט ספורט פראלימפי באזור באר שבע והדרום. שיתוף פעולה בין מרכז ספיבק, עמותת אילן וההתאחדות הישראלית לספורט נכים',
     ar: 'تعرفوا على سبورت داروم - مشروع رياضي بارالمبي في منطقة بئر السبع والجنوب. تعاون بين مركز سبيفاك وجمعية إيلان واتحاد الرياضة البارالمبية',
     ru: 'Познакомьтесь со Спорт Даром - паралимпийским спортивным проектом в районе Беэр-Шевы и юга страны. Сотрудничество между центром Спивак, ассоциацией Илан и федерацией паралимпийского спорта',
   };
@@ -64,7 +65,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
   const tAchievements = await getTranslations('achievements');
 
   // Partner organizations data
-  const partners = [
+  const partners: { key: PartnerKey; icon: typeof BuildingIcon }[] = [
     { key: 'spivak', icon: BuildingIcon },
     { key: 'ilan', icon: HeartIcon },
     { key: 'paralympic', icon: TrophyIcon },
@@ -252,15 +253,20 @@ export default async function AboutPage({ params }: AboutPageProps) {
             aria-label={t('whoWeAre.title')}
           >
             {partners.map(({ key, icon: Icon }) => (
-              <article
+              <a
                 key={key}
-               
+                href={partnerLinks[key]}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
-                  'relative p-6 rounded-[var(--radius-xl)]',
+                  'relative block p-6 rounded-[var(--radius-xl)]',
                   'bg-[var(--color-primary-50)]',
                   'border border-[var(--color-primary-100)]',
                   'hover:shadow-lg hover:shadow-[var(--color-primary-200)]/50',
-                  'transition-shadow duration-[var(--duration-normal)]'
+                  'hover:border-[var(--color-accent-300)]',
+                  'focus-visible:outline focus-visible:outline-[var(--focus-ring-width)]',
+                  'focus-visible:outline-[var(--focus-ring-color)]',
+                  'transition-all duration-[var(--duration-normal)]'
                 )}
               >
                 {/* Top accent line */}
@@ -303,7 +309,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 >
                   {t(`whoWeAre.partners.${key}.description`)}
                 </p>
-              </article>
+              </a>
             ))}
           </div>
         </div>

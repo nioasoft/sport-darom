@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { cn } from '@/src/lib/utils';
 import { useReducedMotion } from '@/src/hooks/useReducedMotion';
 import { HeartIcon, TrophyIcon } from '@/src/components/icons';
+import { partnerLinks } from '@/src/lib/partners';
 
 export interface HeroProps {
   /** Background image source */
@@ -274,13 +275,21 @@ export function Hero({
           )}
         >
           {partnerLogos.map(({ key, icon: Icon }) => (
-            <div
+            <a
               key={key}
+              href={partnerLinks[key]}
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 'inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/10',
                 // Slightly tighter padding on mobile to fit longer org names.
                 'px-3 py-1.5 md:px-4 md:py-2',
-                'backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.14)]'
+                'backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.14)]',
+                'transition-colors duration-[var(--duration-fast)]',
+                'hover:bg-white/20 hover:border-white/30',
+                'focus-visible:outline focus-visible:outline-[var(--focus-ring-width)]',
+                'focus-visible:outline-offset-[var(--focus-ring-offset)]',
+                'focus-visible:outline-white'
               )}
             >
               <span
@@ -300,7 +309,7 @@ export function Hero({
               >
                 {t(`partners.${key}`)}
               </span>
-            </div>
+            </a>
           ))}
         </motion.div>
 
